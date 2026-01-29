@@ -1,0 +1,4 @@
+glioma
+healthy
+meningioma
+pituitary
