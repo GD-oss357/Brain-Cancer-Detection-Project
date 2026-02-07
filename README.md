@@ -19,7 +19,7 @@ These are all key characteristics that help to distinguish the tumors from each 
 The results support the models accuracy in identifying the type of brain tumor. The lowest percent accuracy occurred with the glioma tumor- this is likely a result of the lack of regularity of the tumor, with each tumor taking a unique, irregular shape, making it the most challenging to be detected. These tumors often blend into the surrounding tissue, compared to the other tumors that strike an apparent colour contrast again the brain tissue. Additionally, both meningioma and pituitary tumors have a more distinct shape and region in which they are located, thus yielding a higher percent accuracy. 
 ## Running this project
 
-1. Install Jetson Inference
+1. Install Jetson Inference: https://github.com/dusty-nv/jetson-inference 
 2. Download the project repository
 3. Change directories into the project repository
 
