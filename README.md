@@ -7,7 +7,9 @@ This script is able to sort through various MRIs of brain cancer tumors and clas
 
 The data used in this project was taken from https://www.kaggle.com/datasets/rm1000/brain-tumor-mri-scans?select=meningioma
 
-The data was then imported into the development environment where it was then split into three groups, testing, training, and validation. In the training process, the resnet.18 model was used and retrained with the new categories, being glioma, meningioma, pituitary, and healthy. By doing so, the model learns to recognize the distinct features of each form of cancer, to then be able to classify the MRI with its associated name. Glioma tumors appear on an MRI scan to have an irregular shape and a changing colour intensity- often blurring into the surrounding tissue. Meningioma tumors are small and round, often attached to the brain's lining. Finally, pituitary tumors are small, dense masses, often located in the base of the brain. A healthy MRI scan of the brain would appear to be symmetrical, with a clear distinction between white and gray matter. These are all key characteristics that help to distinguish the tumors from each other, which the model uses during training to effectively classify the type of brain cancer. To test the model, the percent accuracy was taken by comparing the amount of photos correctly identified, to the total number of images in the dataset. The results have been listed below:
+The data was then imported into the development environment where it was then split into three groups, testing, training, and validation. In the training process, the resnet.18 model was used and retrained with the new categories, being glioma, meningioma, pituitary, and healthy. By doing so, the model learns to recognize the distinct features of each form of cancer, to then be able to classify the MRI with its associated name. Glioma tumors appear on an MRI scan to have an irregular shape and a changing colour intensity- often blurring into the surrounding tissue. Meningioma tumors are small and round, often attached to the brain's lining. Finally, pituitary tumors are small, dense masses, often located in the base of the brain. A healthy MRI scan of the brain would appear to be symmetrical, with a clear distinction between white and gray matter. 
+
+These are all key characteristics that help to distinguish the tumors from each other, which the model uses during training to effectively classify the type of brain cancer. To test the model, the percent accuracy was taken by comparing the amount of photos correctly identified, to the total number of images in the dataset. The results have been listed below:
 
 * glioma 39.88%
 * pituitary 85.80%
@@ -25,7 +27,7 @@ To process a folder, follow the steps listed below:
 1.  Run the command in the terminal: `./pythonnet.py [FOLDERNAME]`
 
 To process a photo, follow the steps listed below:
-1. Run the command in the terminal: `imagenet --model=resnet1cd8.onnx --labels=labels.txt --input_blob=input_0 --output_blob=output_0 [IMAGE NAME] test.jpg`
+1. Run the command in the terminal: `imagenet --model=resnet18.onnx --labels=labels.txt --input_blob=input_0 --output_blob=output_0 [IMAGE NAME] test.jpg`
 
 [View a video explanation here](video link)
 
