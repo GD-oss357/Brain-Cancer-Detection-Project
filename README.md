@@ -24,7 +24,8 @@ The results support the models accuracy in identifying the type of brain tumor. 
 3. Change directories into the project repository
 
 To process a folder, follow the steps listed below:
-1.  Run the command in the terminal: `./pythonnet.py [FOLDERNAME]`
+1. To make the script executable, run the command: `chmod +x pythonnet.py`
+2. Run the command in the terminal: `./pythonnet.py [FOLDERNAME]`
 
 To process a photo, follow the steps listed below:
 1. Run the command in the terminal: `imagenet --model=resnet18.onnx --labels=labels.txt --input_blob=input_0 --output_blob=output_0 [IMAGE NAME] test.jpg`
