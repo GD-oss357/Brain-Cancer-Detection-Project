@@ -30,5 +30,5 @@ To process a folder, follow the steps listed below:
 To process a photo, follow the steps listed below:
 1. Run the command in the terminal: `imagenet --model=resnet18.onnx --labels=labels.txt --input_blob=input_0 --output_blob=output_0 [IMAGE NAME] test.jpg`
 
-[View a video explanation here](video link)
+[View a video explanation here: https://drive.google.com/file/d/1grPYbsT_0e56RzoGeyhVcABHS_g--R05/view?usp=sharing]
 
